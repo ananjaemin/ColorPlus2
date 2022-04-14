@@ -12,10 +12,11 @@ export const Container = styled.div`
     display:flex;
     height:721.600px;
     align-items:center;
+    position:fixed;
 `;
 
 export const Box = styled.div`
-    width:240px;
+    width:245px;
     height:100%;
     display:flex;
     align-items:center;
@@ -76,6 +77,10 @@ export const Menu = styled(Layouthover)`
     font-weight:bold;
     font-size: 20px;
     margin-bottom:12px;
+    padding-left: 12px; 
+    border-radius:2px;
+    color: ${(props) => (props.href === props.pathname ? "#906bff" : "#f5f5f5")};
+    border-left:${(props)=>(props.href === props.pathname ? "3px solid #906bff":"0px")}
 `;
 
 
