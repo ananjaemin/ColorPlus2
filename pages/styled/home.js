@@ -1,14 +1,6 @@
 import styled from "styled-components";
 
 
-
-export const EeventBox = styled.div`
-    width:90%;
-    margin-top:${props=> (props.top ? "60px" : "0px")};
-    display: flex;
-    flex-direction:column;
-`;
-
 export const BoxHeader = styled.div`
     width:100%;
     height:90px;

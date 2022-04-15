@@ -1,8 +1,10 @@
 import { Fragment } from "react"
 import styled from "styled-components"
-import { BoxHeader, ColorBoxContainer, EeventBox,Title } from "./styled/home";
+import { BoxHeader, ColorBoxContainer,Title } from "./styled/home";
 import Colorbox from "../component/Colorbox";
-
+import { EeventBox,Container, DropButton, CheckBool } from "../styles/main";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCaretDown,faCaretRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home(){
 
@@ -10,9 +12,15 @@ export default function Home(){
     <Container>
       <EeventBox top>
         <BoxHeader>
-          <Title>COLOUR PALETTE CONDENSED</Title> 
+          <Title>
+            COLOUR PALETTE CONDENSED__
+          </Title>
+          <DropButton for="DropButton">
+            <FontAwesomeIcon icon={faCaretRight} />
+          </DropButton>
+          <CheckBool id="DropButton" type="checkbox"></CheckBool>
         </BoxHeader>
-        <ColorBoxContainer> 
+        <ColorBoxContainer>
           <Colorbox bgcolor={'--ambrosia'} title={"ambrosia"} hex={"#FCDBBA"}></Colorbox>
           <Colorbox bgcolor={'--apricot'} title={"apricot"} hex={"#FF8652"}></Colorbox>
           <Colorbox bgcolor={'--aubergine'} title={"aubergine"} hex={"#6A2352"}></Colorbox>
@@ -120,10 +128,4 @@ export default function Home(){
   )
 }
 
-export const Container = styled.div`
-  width:100%;
-  padding-left:250px;
-  display:flex;
-  align-items:center;
-  flex-direction:column;
-`;
+

@@ -1,9 +1,15 @@
-
+import { Container,EeventBox } from "../styles/main.js"
 
 export default function combination(){
     return(
-        <div>
-            2
-        </div>
+        <Container>
+            <EeventBox top>
+                2
+
+
+            </EeventBox>
+
+
+        </Container>
     )
 }

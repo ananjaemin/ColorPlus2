@@ -3,9 +3,19 @@ import "./styled/home.scss"
 import styled from 'styled-components'
 import Head from 'next/head'
 import Menubar from '../component/layout/layout'
+//import { useRef } from 'react'
 
 function MyApp({ Component, pageProps }) {
-
+  // const ddd = useRef(null)
+  // if (typeof window !== "undefined") {
+  //   let progress = ddd.current;
+  //   let totalHeight = ddd.scrollHeight - window.innerHeight;
+  //   window.onscroll = function(){
+  //     let progressHeight = (window.pageYOffset / totalHeight) * 100;
+  //     progress.styled = progressHeight + "%";
+  //   }
+  
+  // }
   return(
     <App>
       <div id="scrollPath"/>
@@ -21,21 +31,13 @@ function MyApp({ Component, pageProps }) {
 }
 
 
-if (typeof window !== "undefined") {
-  let progress = document.getElementById('progressbar');
-  let totalHeight = document.body.scrollHeight - window.innerHeight;
-  window.onscroll = function(){
-    let progressHeight = (window.pageYOffset / totalHeight) * 100;
-    progress.style.height = progressHeight + "%";
-  }
 
-}
-
-
-
-export default MyApp
 
 const App = styled.div`
   display:flex;
 `;
+
+
+export default MyApp
+
 

@@ -1,7 +1,13 @@
+import { Container,EeventBox } from "../styles/main.js"
+
 export default function extraction(){
     return(
-        <div>
-            3
-        </div>
+        <Container>
+            <EeventBox top>
+                3
+
+            </EeventBox>
+            
+        </Container>
     )
 }
