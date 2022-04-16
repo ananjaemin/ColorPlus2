@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const BoxHeader = styled.div`
     width:100%;
-    height:90px;
+    height:52.89px;
     display:flex;
     align-items:flex-end;
 `;
@@ -21,6 +21,44 @@ export const Title = styled.div`
     margin-bottom:20px;
 `;
 
+export const MoreButtonBox = styled.div`
+    width:85%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0px -32px 12px 10px #0e101f;
+
+
+
+`;
+
+export const MoreButton = styled.button`
+    width:200px;
+    outline:none;
+    background:none;
+    color:#f5f5f5;
+    font-size:20px;
+    font-weight:bold;
+    padding:10px;
+    border:0;
+    //디자인 몰?루
+    &:hover{    
+        color:#906bff;
+    }
+    
+
+`;
+
+export const EeventBox2 = styled.div`
+    width:90%;
+    height:${props=>(props.height || "auto")};
+    margin-top:${props=> (props.top ? "60px" : "0px")};
+    display: flex;
+    align-items:center;
+    flex-direction:column;
+    overflow:hidden;
+    padding-bottom:${props=>(props.MorePading)};
+`;
 
 
 

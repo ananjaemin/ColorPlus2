@@ -10,7 +10,8 @@ const Layouthover = styled.a`
 
 export const Container = styled.div`
     display:flex;
-    height:721.600px;
+    /* height:721.600px; */
+    height:100%;
     align-items:center;
     position:fixed;
 `;
@@ -58,7 +59,7 @@ export const MenubarBox = styled.div`
 `;
 
 export const Menubar_list =  styled.div`
-    width:155px;
+    width:169px;
     height: 400px;
     display:flex;
     flex-direction:column;
@@ -66,12 +67,11 @@ export const Menubar_list =  styled.div`
 
 export const Light_line = styled.div`
     width:4px;
-    height:662px;
+    height:90%; 
     background-color: aqua;
     box-shadow: 0px 0px 12px aqua;
     border-radius:20px;
 `;
-
     
 export const Menu = styled(Layouthover)`
     font-weight:bold;

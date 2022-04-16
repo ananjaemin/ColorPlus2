@@ -1,24 +1,27 @@
 import { Fragment } from "react"
 import styled from "styled-components"
-import { BoxHeader, ColorBoxContainer,Title } from "./styled/home";
+import { BoxHeader, ColorBoxContainer,MoreButton,MoreButtonBox,Title,EeventBox2 } from "./styled/home";
 import Colorbox from "../component/Colorbox";
-import { EeventBox,Container, DropButton, CheckBool } from "../styles/main";
+import { Container } from "../styles/main";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown,faCaretRight } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
 export default function Home(){
+  const [isMore, setIsMore] = useState(false);
+
+  const openModalHandler = (e) => {
+    setIsMore(!isMore)
+  };
 
   return (
     <Container>
-      <EeventBox top>
+      <EeventBox2 top height={isMore ? "auto" : "400px"} MorePading={isMore ? "35px":"0px"}>
         <BoxHeader>
           <Title>
-            COLOUR PALETTE CONDENSED__
+            COLOUR PALETTE CONDENSED__ 
           </Title>
-          <DropButton for="DropButton">
-            <FontAwesomeIcon icon={faCaretRight} />
-          </DropButton>
-          <CheckBool id="DropButton" type="checkbox"></CheckBool>
+          
         </BoxHeader>
         <ColorBoxContainer>
           <Colorbox bgcolor={'--ambrosia'} title={"ambrosia"} hex={"#FCDBBA"}></Colorbox>
@@ -118,12 +121,21 @@ export default function Home(){
           <Colorbox bgcolor={'--white'} title={"white"} hex={"#FFFFFF"}></Colorbox>
           <Colorbox bgcolor={'--yellow'} title={"yellow"} hex={"#FFE03D"}></Colorbox>
         </ColorBoxContainer>
+      </EeventBox2>
+      <MoreButtonBox>
+        {isMore ? <MoreButton onClick={openModalHandler} >Close</MoreButton> : <MoreButton onClick={openModalHandler} >Read More...</MoreButton>}
+      </MoreButtonBox>
 
-      </EeventBox>
+      <EeventBox2 top>
+        <BoxHeader>
+          <Title>
+            COLOUR PALETTE CONDENSED__ 
+          </Title>
+        </BoxHeader>
+      </EeventBox2>
 
 
-
-
+  
     </Container>
   )
 }

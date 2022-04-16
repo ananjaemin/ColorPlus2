@@ -6,23 +6,22 @@ export const Container = styled.div`
   display:flex;
   align-items:center;
   flex-direction:column;
+  height:auto; //삭제예정
 `;
 
 export const EeventBox = styled.div`
     width:90%;
+    height:${props=>(props.height || "auto")};
     margin-top:${props=> (props.top ? "60px" : "0px")};
     display: flex;
     flex-direction:column;
+    overflow:hidden;
 `;
 
-export const DropButton = styled.label`
-    margin-bottom:20px;
-    background:0;
-    border:0;
-    outline:0;
 
-`;
 
-export const CheckBool = styled.input`
-    display:none;
-`;
+
+
+
+
+
