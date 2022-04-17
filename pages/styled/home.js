@@ -15,6 +15,10 @@ export const ColorBoxContainer = styled.div`
     padding-left:30px;
 `;
 
+export const GradientsContainer = styled(ColorBoxContainer)`
+
+`;
+
 export const Title = styled.div`
     font-size:25px;
     font-weight:bold;
@@ -25,23 +29,25 @@ export const MoreButtonBox = styled.div`
     width:85%;
     display:flex;
     align-items:center;
-    justify-content:center;
-    box-shadow:0px -32px 12px 10px #0e101f;
-
-
+    justify-content:flex-end;
+    box-shadow:0px -27px 12px 10px #0e101f;
 
 `;
 
 export const MoreButton = styled.button`
-    width:200px;
+    width:150px;
     outline:none;
     background:none;
-    color:#f5f5f5;
+    color:#d9d9d9;
     font-size:20px;
     font-weight:bold;
-    padding:10px;
+    padding-bottom:5px;
+    margin-right:50px;
     border:0;
-    //디자인 몰?루
+    border-right:3px solid #d4d4d4;
+    border-bottom:3px solid #d4d4d4;
+    border-radius:0px 0px 10px 0px;
+    //
     &:hover{    
         color:#906bff;
     }

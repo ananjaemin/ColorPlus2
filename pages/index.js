@@ -1,22 +1,29 @@
 import { Fragment } from "react"
 import styled from "styled-components"
-import { BoxHeader, ColorBoxContainer,MoreButton,MoreButtonBox,Title,EeventBox2 } from "./styled/home";
+import { BoxHeader, ColorBoxContainer,MoreButton,MoreButtonBox,Title,EeventBox2, GradientsContainer } from "./styled/home";
 import Colorbox from "../component/Colorbox";
 import { Container } from "../styles/main";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown,faCaretRight } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import Gradientsbox from "../component/Gradientsbox";
 
 export default function Home(){
-  const [isMore, setIsMore] = useState(false);
+  const [paletteisMore, palettesetIsMore] = useState(false);
+  const [gradientisMore, gradientsetIsMore] = useState(false);
 
-  const openModalHandler = (e) => {
-    setIsMore(!isMore)
+  const paletteMore = (e) => {
+    palettesetIsMore(!paletteisMore)
   };
+
+  const gradientMore = (e) =>{
+    gradientsetIsMore(!gradientisMore)
+  };
+  
 
   return (
     <Container>
-      <EeventBox2 top height={isMore ? "auto" : "400px"} MorePading={isMore ? "35px":"0px"}>
+      <EeventBox2 top height={paletteisMore ? "auto" : "391px"} MorePading={paletteisMore ? "35px":"0px"}>
         <BoxHeader>
           <Title>
             COLOUR PALETTE CONDENSED__ 
@@ -123,16 +130,42 @@ export default function Home(){
         </ColorBoxContainer>
       </EeventBox2>
       <MoreButtonBox>
-        {isMore ? <MoreButton onClick={openModalHandler} >Close</MoreButton> : <MoreButton onClick={openModalHandler} >Read More...</MoreButton>}
+        {paletteisMore ? <MoreButton onClick={paletteMore}>Close</MoreButton> : <MoreButton onClick={paletteMore} >Read More...</MoreButton>}
       </MoreButtonBox>
 
-      <EeventBox2 top>
+      <EeventBox2 height={gradientisMore ? "auto":"400px"} MorePading={gradientisMore  ? "35px":"0px"}>
         <BoxHeader>
           <Title>
-            COLOUR PALETTE CONDENSED__ 
+            GRADIENTS COLLECTION PREVIEW__
           </Title>
         </BoxHeader>
+        <GradientsContainer>
+          <Gradientsbox startcolor={'#6DE195'} endcolor={'#C4E759'}></Gradientsbox>
+          <Gradientsbox startcolor={'#41C7AF'} endcolor={'#54E38E'}></Gradientsbox>
+          <Gradientsbox startcolor={'#99E5A2'} endcolor={'#D4FC78'}></Gradientsbox>
+          <Gradientsbox startcolor={'#ABC7FF'} endcolor={'#C1E3FF'}></Gradientsbox>
+          <Gradientsbox startcolor={'#6CACFF'} endcolor={'#8DEBFF'}></Gradientsbox>
+          <Gradientsbox startcolor={'#5583EE'} endcolor={'#41D8DD'}></Gradientsbox>
+          <Gradientsbox startcolor={'#A16BFE'} endcolor={'#DEB0DF'}></Gradientsbox>
+          <Gradientsbox startcolor={'#D279EE'} endcolor={'#F8C390'}></Gradientsbox>
+          <Gradientsbox startcolor={'#F78FAD'} endcolor={'#FDEB82'}></Gradientsbox>
+          <Gradientsbox startcolor={'#BC3D2F'} endcolor={'#A16BFE'}></Gradientsbox>
+          <Gradientsbox startcolor={'#A43AB2'} endcolor={'#E13680'}></Gradientsbox>
+          <Gradientsbox startcolor={'#9D2E7D'} endcolor={'#E16E93'}></Gradientsbox>
+          <Gradientsbox startcolor={'#F5CCF6'} endcolor={'#F1EEF9'}></Gradientsbox>
+          <Gradientsbox startcolor={'#F0EFF0'} endcolor={'#FAF8F9'}></Gradientsbox>
+          <Gradientsbox startcolor={'#121317'} endcolor={'#323B42'}></Gradientsbox>
+
+
+          <Gradientsbox startcolor={'#fc8a15'} endcolor={'#fff6a2'}></Gradientsbox>
+          <Gradientsbox startcolor={'#f9d00f'} endcolor={'#fbff64'}></Gradientsbox>
+          <Gradientsbox startcolor={'#ff0592'} endcolor={'#ffbee3'}></Gradientsbox>
+          <Gradientsbox startcolor={'#295e6a'} endcolor={'#4797b1'}></Gradientsbox>
+        </GradientsContainer>
       </EeventBox2>
+      <MoreButtonBox>
+        {gradientisMore ? <MoreButton onClick={gradientMore}>Close</MoreButton>:<MoreButton onClick={gradientMore}>Read More...</MoreButton>}
+      </MoreButtonBox>
 
 
   

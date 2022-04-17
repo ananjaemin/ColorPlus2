@@ -6,7 +6,7 @@ export const Container = styled.div`
   display:flex;
   align-items:center;
   flex-direction:column;
-  height:auto; //삭제예정
+  height:${props => props.height || "auto"};
 `;
 
 export const EeventBox = styled.div`

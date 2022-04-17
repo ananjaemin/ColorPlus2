@@ -4,7 +4,7 @@ export default function combination(){
     return(
         <Container>
             <EeventBox top>
-                2
+                
 
 
             </EeventBox>
