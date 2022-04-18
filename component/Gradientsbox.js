@@ -4,7 +4,7 @@ export default function Gradientsbox({startcolor,endcolor}){
 
     return(
         <Container>
-            <GradientsBox bgcolor={`linear-gradient(33deg,${startcolor},${endcolor})`}/>
+            <GradientsBox bgrcolor={`linear-gradient(33deg,${startcolor},${endcolor})`}/>
             <Startcolortext>
                 <ColorPoint color={`${endcolor}`} />
                 {endcolor}
@@ -34,11 +34,11 @@ const Container = styled.div`
 `;
 
 const GradientsBox = styled.div`
-    width:125px;
-    height:150px;
+    width:105px;
+    height:130px;
     margin:10px;
     border-radius:10px;
-    background:${props => props.bgcolor || "black"};
+    background:${props => props.bgrcolor || "black"};
 `;
 
 const ColorPoint = styled.div`
@@ -49,7 +49,7 @@ const ColorPoint = styled.div`
 `;
 
 const Startcolortext = styled.div`
-    width: 50%;
+    width: 58%;
     justify-content:space-between;
     align-items:center;
     display:flex;

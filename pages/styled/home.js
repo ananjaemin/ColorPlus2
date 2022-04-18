@@ -31,6 +31,7 @@ export const MoreButtonBox = styled.div`
     align-items:center;
     justify-content:flex-end;
     box-shadow:0px -27px 12px 10px #0e101f;
+    margin-bottom:${props => props.test ? "100px":"0px"}
 
 `;
 

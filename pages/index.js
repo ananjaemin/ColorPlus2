@@ -163,7 +163,7 @@ export default function Home(){
           <Gradientsbox startcolor={'#295e6a'} endcolor={'#4797b1'}></Gradientsbox>
         </GradientsContainer>
       </EeventBox2>
-      <MoreButtonBox>
+      <MoreButtonBox test>
         {gradientisMore ? <MoreButton onClick={gradientMore}>Close</MoreButton>:<MoreButton onClick={gradientMore}>Read More...</MoreButton>}
       </MoreButtonBox>
 
