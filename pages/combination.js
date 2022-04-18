@@ -1,17 +1,19 @@
 import { Container,EeventBox } from "../styles/main.js"
-import { SketchPicker } from 'react-color';
+import { CombinationContainer } from "./styled/combi.js";
 import { useState } from "react";
+import ColorPicker from "../component/ColorPicker.js";
 
 export default function combination(){
-    const [color,setColor] = useState('hsl(0, 0%, 100%)');
-
+    const [color, setColor] = useState('#fff');
 
     return(
-        <Container>
-            <EeventBox top>
-                <SketchPicker color={color} onChange={(color)=>{setColor(color.hsl)}} width={400} height={400}/>
+        
+        <Container height={"auto"}>
+            <EeventBox top height={"100%"}>
+                <CombinationContainer>
+                    <ColorPicker setColor={setColor} color={color}></ColorPicker>               
 
-
+                </CombinationContainer>
             </EeventBox>
 
 
