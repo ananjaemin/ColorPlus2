@@ -6,7 +6,12 @@ export const CombinationContainer = styled.div`
     height:100%;
     display:flex;
     align-items:center;
+`;
 
+export const TestBox = styled.div`
+    width:100px;
+    height:100px;
+    background:${props => props.bgrcolor || 'black'};
 `;
 
 
