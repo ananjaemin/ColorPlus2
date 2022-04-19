@@ -8,13 +8,6 @@ const Layouthover = styled.a`
 `;
 
 
-export const Container = styled.div`
-    display:flex;
-    /* height:721.600px; */
-    height:100%;
-    align-items:center;
-    position:fixed;
-`;
 
 export const Box = styled.div`
     width:245px;
@@ -55,7 +48,6 @@ export const MenubarBox = styled.div`
     align-items:center;
     justify-content:flex-end;
 
-
 `;
 
 export const Menubar_list =  styled.div`
@@ -79,8 +71,22 @@ export const Menu = styled(Layouthover)`
     margin-bottom:12px;
     padding-left: 12px; 
     border-radius:2px;
+    outline:none;
     color: ${(props) => (props.href === props.pathname ? "#906bff" : "#f5f5f5")};
-    border-left:${(props)=>(props.href === props.pathname ? "3px solid #906bff":"0px")}
+    border-left:${(props)=>(props.href === props.pathname ? "3px solid #906bff":"0px")};
+`;
+
+export const Container = styled.div`
+    display:flex;
+    /* height:721.600px; */
+    height:100%;
+    align-items:center;
+    position:fixed;
+
+    @media screen and (max-width:899px) {
+        display:none;
+    }
+
 `;
 
 

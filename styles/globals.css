@@ -12,15 +12,8 @@ body {
 ::-webkit-scrollbar{
   width: 0;
 }
-#scrollPath{
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 10px;
-  height: 100%;
-  background:  rgba(255, 255, 255, 0.05);
-}
 #progressbar{
+  z-index: 2;
   position: fixed;
   top: 0;
   right: 0;
