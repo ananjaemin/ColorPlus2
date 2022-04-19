@@ -25,7 +25,7 @@ export default function IroBox({ setColor, color }) {
         {
             component: iro.ui.Slider,
             options: {
-              sliderType: 'alpha'
+              sliderType: 'kelvin'
             }
           },
         ]

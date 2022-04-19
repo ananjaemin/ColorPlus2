@@ -7,7 +7,7 @@ export const Container = styled.div`
   align-items:center;
   flex-direction:column;
   height:${props => props.height || "auto"};
-  @media screen and (max-width:899px) {
+  @media screen and (max-width:1159px) {
     padding-left:0px;
     padding-top:60px;
   }
@@ -20,6 +20,8 @@ export const EeventBox = styled.div`
     display: flex;
     flex-direction:column;
     overflow:hidden;
+    ${props => props.center ? "justify-content:center":""};
+    ${props => props.center ? "align-items:center":""};
 `;
 
 

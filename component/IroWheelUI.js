@@ -25,14 +25,16 @@ export default function IroWheel({ setColor, color }) {
         {
             component: iro.ui.Slider,
             options: {
-              sliderType: 'alpha'
+              sliderType: 'kelvin'
             }
           },
         ]
     }))
     cp.on('color:change', (color) => {
-        if (setColor) setColor(color.rgbaString)
+        if (setColor) setColor(color.rgbString)
+
     })
+      
   }, [])
   return <div ref={ref} />
 }

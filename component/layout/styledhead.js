@@ -11,8 +11,9 @@ export const Container = styled.div`
     display:flex;
     align-items:center;
     justify-content:center;
+    background:#0e101f; 
     position:fixed;
-    @media screen and (min-width:899px) {
+    @media screen and (min-width:1159px) {
         display:none;
     }
 `;

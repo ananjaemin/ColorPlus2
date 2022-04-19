@@ -7,8 +7,6 @@ const Layouthover = styled.a`
     }
 `;
 
-
-
 export const Box = styled.div`
     width:245px;
     height:100%;
@@ -78,12 +76,11 @@ export const Menu = styled(Layouthover)`
 
 export const Container = styled.div`
     display:flex;
-    /* height:721.600px; */
-    height:100%;
+    height:721.600px;
     align-items:center;
     position:fixed;
 
-    @media screen and (max-width:899px) {
+    @media screen and (max-width:1159px) {
         display:none;
     }
 
