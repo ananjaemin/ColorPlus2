@@ -22,6 +22,7 @@ export default function useGradients(){
     function StartColorhandle(){
         setIroStartColor(!IroStartColor)
     }
+    
     function EndColorhandle(){
         setIroEndColor(!IroEndtColor)
     }
