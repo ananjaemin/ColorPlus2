@@ -14,7 +14,7 @@ export const Container = styled.div`
 `;
 
 export const EeventBox = styled.div`
-    width:90%;
+    width:${props => props.wfull ? "100%":"90%"};
     height:${props=>(props.height || "auto")};
     margin-top:${props=> (props.top ? "60px" : "0px")};
     display: flex;

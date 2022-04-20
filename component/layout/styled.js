@@ -76,7 +76,8 @@ export const Menu = styled(Layouthover)`
 
 export const Container = styled.div`
     display:flex;
-    height:721.600px;
+    /* height:721.600px; */
+    height:100%;
     align-items:center;
     position:fixed;
 

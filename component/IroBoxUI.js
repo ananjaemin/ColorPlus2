@@ -6,7 +6,7 @@ export default function IroBox({ setColor, color }) {
   const colorPicker = useRef()
   useEffect(() => {
     const cp = (colorPicker.current = new iro.ColorPicker(ref.current,{
-        width: 250,
+        width: 200,
         color,
         sliderSize:20,
         layout:[
@@ -31,7 +31,7 @@ export default function IroBox({ setColor, color }) {
         ]
     }))
     cp.on('color:change', (color) => {
-        if (setColor) setColor(color.rgbaString)
+        if (setColor) setColor(color.rgbString)
     })
   }, [])
   return <div ref={ref} />

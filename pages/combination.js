@@ -1,5 +1,21 @@
 import { Container,EeventBox } from "../styles/main.js"
-import { CombinationContainer,Headers,SelectButtonBox,SelectButton, IroColorBox, IroColorResult,Plus, Box, Colornamebox, ContainerBox, ColorRgba,ColorHex, TestBox } from "./styled/combi.js";
+import { 
+    CombinationContainer,
+    Headers,
+    SelectButtonBox,
+    SelectButton, 
+    IroColorBox, 
+    IroColorResult,
+    Plus, 
+    Box, 
+    Colornamebox, 
+    ContainerBox, 
+    ColorRgba,
+    ColorHex,
+    Sign,
+    ResultBox,
+    ResultColor, 
+} from "./styled/combi.js";
 import { useState } from "react";
 import IroWheel from "../component/IroWheelUI.js";
 import IroBox from "../component/IroBoxUI.js";
@@ -10,6 +26,24 @@ export default function combination(){
     const [WheelUI,setWheelUI] = useState(true);
     const [BoxUI,setBoxUI] = useState(false);
 
+
+
+    // const onChange = (e) => {
+    //   setText(e.target.value);
+      
+    // };
+
+    // const onClick=()=>{
+    //     setColor(text)
+    // }
+    
+    // const onKeyPress = (e) =>{
+    //     if(e.key=='Enter'){
+    //         onClick();
+    //     }
+
+    // }
+
     const WheelUIhandle = (e) =>{
         setBoxUI(false);
         setWheelUI(true);
@@ -18,6 +52,8 @@ export default function combination(){
         setBoxUI(true);
         setWheelUI(false);
     }
+
+    
 
     function colorRGB2Hex(color) {
         var rgb = color.split(',');
@@ -59,7 +95,7 @@ export default function combination(){
     return(
         
         <Container height={"auto"}>
-            <EeventBox top height={"100%"} center>
+            <EeventBox top height={"100%"} center wfull>
                 <Headers>
                     <SelectButtonBox>
                         <SelectButton onClick={WheelUIhandle} left>Wheel</SelectButton>
@@ -77,11 +113,13 @@ export default function combination(){
                                 {BoxUI ? <IroBox color={color} setColor={setColor}/>: ""}
                             </ContainerBox>
                             <Colornamebox>
-                                <ColorRgba value={`${color}`}/>
+                                <ColorRgba value={color}/>
                                 <ColorHex value={`${colorRGB2Hex(color)}`}/>
                             </Colornamebox>
                         </IroColorBox>
+
                         <Plus>+</Plus>
+
                         <IroColorBox bgrcolor={`#1e1f31`}>
                             <ContainerBox>
                                 <IroColorResult bgrcolor={'white'}>
@@ -96,15 +134,16 @@ export default function combination(){
                             </Colornamebox>
                         </IroColorBox>
 
-                       
+                       <Sign>=</Sign>
+                       <ResultBox>
+                            <ResultColor bgrcolor={fusion}/>
+                            <Colornamebox>
+                                <ColorRgba value={`${fusion()}`}/>
+                                <ColorHex value={`${colorRGB2Hex(fusion())}`}/>
+                            </Colornamebox>
+                       </ResultBox>
                     </Box>
-
-
-
-
-                    
                 </CombinationContainer>
-                <TestBox bgrcolor={fusion}/>
             </EeventBox>
 
 

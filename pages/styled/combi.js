@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 export const CombinationContainer = styled.div`
     width:100%;
+    margin-top:30px;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -14,7 +15,7 @@ export const ColorBox = styled.div`
 `;
 
 export const Headers = styled.div`
-    width:85%;
+    width:70%;
     min-width:760.1px;
     max-width:984px;
     height:100px;
@@ -54,9 +55,9 @@ export const SelectButton = styled.button.attrs({
 `;
 
 export const Box = styled.div`
-    width:85%;
-    min-width:760.1px;
-    max-width:984px;
+    width:90%;
+
+
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -67,8 +68,8 @@ export const Box = styled.div`
 `;
 
 export const IroColorBox = styled.div`
-    width:325px;
-    height:400px;
+    width:275px;
+    height:350px;
     border:3px solid #292a42;
     border-radius:10px;
     display:flex;
@@ -83,7 +84,7 @@ export const ContainerBox = styled.div`
 
 export const IroColorResult = styled.div`
     width:50px;
-    height:314px;
+    height:266px;
     margin-right:10px;
     border-radius:10px 0px 0px 10px;
     background:${props => props.bgrcolor || 'black'};
@@ -124,11 +125,31 @@ export const ColorHex = styled(ColorRgba)`
     width:140px;
 `;
 
-export const TestBox = styled.div`
-    width:100px;
-    height:100px;
-    background:${props => props.bgrcolor || 'black'}
+export const Sign = styled.div`
+    font-size:100px;
+    padding:30px;
 `;
+
+export const ResultBox = styled.div`
+    width:240px;
+    min-width:220px;
+    height:280px;
+    border:3px solid #292a42;
+    border-radius:10px;
+    background:#1e1f31;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+`;
+
+export const ResultColor = styled.div`
+    width:95%;
+    height:200px;
+    border-radius:10px;
+    background:${props => props.bgrcolor || 'black'};
+`;
+
 
 
 

@@ -6,7 +6,7 @@ export default function IroWheel({ setColor, color }) {
   const colorPicker = useRef()
   useEffect(() => {
     const cp = (colorPicker.current = new iro.ColorPicker(ref.current,{
-        width: 250,
+        width: 200,
         color,
         sliderSize:20,
         layout:[
@@ -31,8 +31,11 @@ export default function IroWheel({ setColor, color }) {
         ]
     }))
     cp.on('color:change', (color) => {
-        if (setColor) setColor(color.rgbString)
-
+        if (setColor){
+          setColor(color.rgbString)
+        } 
+          
+        
     })
       
   }, [])
