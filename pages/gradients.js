@@ -8,7 +8,7 @@ import { useState } from "react/cjs/react.development";
 import IroBox from "../component/IroBoxUI";
 import IroWheel from "../component/IroWheelUI";
 
-export default function gradients(){
+export default function useGradients(){
     const [IroStartColor,setIroStartColor] = useState(false)
     const [IroEndtColor,setIroEndColor] = useState(false)
 
