@@ -1,6 +1,6 @@
 import { Fragment } from "react"
 import styled from "styled-components"
-import { BoxHeader, ColorBoxContainer,MoreButton,MoreButtonBox,Title,EeventBox2, GradientsContainer } from "./styled/home";
+import { BoxHeader, ColorBoxContainer,MoreButton,MoreButtonBox,Title,EeventBox2, GradientsContainer } from "../styles/home";
 import Colorbox from "../component/Colorbox";
 import { Container } from "../styles/main";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

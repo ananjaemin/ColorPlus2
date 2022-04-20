@@ -1,6 +1,5 @@
 import '../styles/globals.css'
-import "./styled/home.scss"
-import styled from 'styled-components'
+import "../styles/home.scss"
 import Head from 'next/head'
 import Menubar from '../component/layout/layout'
 import Header from '../component/layout/header'

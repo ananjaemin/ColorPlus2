@@ -15,7 +15,7 @@ import {
     Sign,
     ResultBox,
     ResultColor, 
-} from "./styled/combi.js";
+} from "../styles/combi.js";
 import IroWheel from "../component/IroWheelUI.js";
 import IroBox from "../component/IroBoxUI.js";
 import { useState } from "react/cjs/react.development";
