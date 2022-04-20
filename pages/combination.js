@@ -18,7 +18,7 @@ import {
 } from "../styles/combi.js";
 import IroWheel from "../component/IroWheelUI.js";
 import IroBox from "../component/IroBoxUI.js";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 
 export default function useCombination(){
     const [color, setColor] = useState('rgb(255,255,255)');

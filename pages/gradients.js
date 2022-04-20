@@ -1,8 +1,7 @@
-import styled from "styled-components";
 import { Container, EeventBox } from "../styles/main";
 import { Body, Box, ColorContainer, ContainerBox2, Deg, EndColor, EndColorBox, GradientsBox, GradientsBoxContainer, OptionContainer, Showbox, StartColor, StartColorBox,Gradient } from "../styles/gradi";
 import { Headers,SelectButtonBox,SelectButton,IroColorBox,ContainerBox,IroColorResult,Colornamebox,ColorRgba,ColorHex } from "../styles/combi";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 
 
 import IroBox from "../component/IroBoxUI";
@@ -22,7 +21,7 @@ export default function useGradients(){
     function StartColorhandle(){
         setIroStartColor(!IroStartColor)
     }
-    
+
     function EndColorhandle(){
         setIroEndColor(!IroEndtColor)
     }
