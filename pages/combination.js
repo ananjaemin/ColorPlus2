@@ -16,15 +16,15 @@ import {
     ResultBox,
     ResultColor, 
 } from "./styled/combi.js";
-import { useState } from "react";
+import { UseState } from "react";
 import IroWheel from "../component/IroWheelUI.js";
 import IroBox from "../component/IroBoxUI.js";
 
 export default function combination(){
-    const [color, setColor] = useState('rgb(255,255,255)');
-    const [color2, setColor2] = useState('rgb(255,255,255)');
-    const [WheelUI,setWheelUI] = useState(true);
-    const [BoxUI,setBoxUI] = useState(false);
+    const [color, setColor] = UseState('rgb(255,255,255)');
+    const [color2, setColor2] = UseState('rgb(255,255,255)');
+    const [WheelUI,setWheelUI] = UseState(true);
+    const [BoxUI,setBoxUI] = UseState(false);
 
 
 
