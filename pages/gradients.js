@@ -2,22 +2,22 @@ import styled from "styled-components";
 import { Container, EeventBox } from "../styles/main";
 import { Body, Box, ColorContainer, ContainerBox2, Deg, EndColor, EndColorBox, GradientsBox, GradientsBoxContainer, OptionContainer, Showbox, StartColor, StartColorBox,Gradient } from "./styled/gradi";
 import { Headers,SelectButtonBox,SelectButton,IroColorBox,ContainerBox,IroColorResult,Colornamebox,ColorRgba,ColorHex } from "./styled/combi";
-import { useState } from "react";
+import { UseState } from "react";
 
 
 import IroBox from "../component/IroBoxUI";
 import IroWheel from "../component/IroWheelUI";
 
 export default function gradients(){
-    const [IroStartColor,setIroStartColor] = useState(false)
-    const [IroEndtColor,setIroEndColor] = useState(false)
+    const [IroStartColor,setIroStartColor] = UseState(false)
+    const [IroEndtColor,setIroEndColor] = UseState(false)
 
-    const [deg,setdeg] = useState('0');
-    const [color, setColor] = useState('rgb(255,255,255)');
-    const [color2, setColor2] = useState('rgb(255,255,255)');
+    const [deg,setdeg] = UseState('0');
+    const [color, setColor] = UseState('rgb(255,255,255)');
+    const [color2, setColor2] = UseState('rgb(255,255,255)');
 
-    const [WheelUI,setWheelUI] = useState(true);
-    const [BoxUI,setBoxUI] = useState(false);
+    const [WheelUI,setWheelUI] = UseState(true);
+    const [BoxUI,setBoxUI] = UseState(false);
 
     function StartColorhandle(){
         setIroStartColor(!IroStartColor)

@@ -27,7 +27,6 @@ export default function combination(){
     const [BoxUI,setBoxUI] = UseState(false);
 
 
-
     // const onChange = (e) => {
     //   setText(e.target.value);
       
