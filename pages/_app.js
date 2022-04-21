@@ -12,13 +12,14 @@ config.autoAddCss = false
 
 
 function MyApp({ Component, pageProps }) {
-  const [ loading,setLoading] = useState(false);
-
+  const [loading,setLoading] = useState(false);
   useEffect(()=>{
     const start = () =>{
+      console.log("Loading...")
       setLoading(true);
     };
     const end = () =>{
+      console.log("Loading End...")
       setLoading(false);
     };
 
@@ -31,10 +32,7 @@ function MyApp({ Component, pageProps }) {
       Router.events.off("routeChangeComplete",end);
       Router.events.off("routeChangeError",end);
     };
-
   }, []);
-
-
 
   return loading ? (
     <Loading/>
