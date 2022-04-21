@@ -16,6 +16,7 @@ export default function Menubar(props){
                        <Menu href="/combination" pathname={router.pathname}>Combination</Menu>
                        <Menu href="/extraction" pathname={router.pathname}>Extraction</Menu>
                        <Menu href="/gradients" pathname={router.pathname}>Gradients</Menu>
+                       <Menu href="/boxshadow" pathname={router.pathname}>Box Shadow</Menu>
                        <Menu href="" >Add..</Menu>
 
 

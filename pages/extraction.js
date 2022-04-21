@@ -1,6 +1,6 @@
 import { Container,EeventBox } from "../styles/main.js"
 
-export default function extraction(){
+export default function useExtraction(){
     return(
         <Container>
             <EeventBox top>
