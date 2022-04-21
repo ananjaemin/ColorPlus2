@@ -67,9 +67,9 @@ ColorPlus의 제작 의도는 사용자가 보다 쉽게 다가올 수 있고 �
 2. 색상 리모콘으로 색이름을 검색해서 rgb나 hex값을 얻을 수 있다. <br/>
 3. Add ... <br/>
 <h2>Demo Img (확정된 디자인이 아닙니다)</h2>
-<img src="https://user-images.githubusercontent.com/81001494/164476900-497666f3-9119-4459-bee3-c4aadbd69c4e.png"> <br/>
-<img src="https://user-images.githubusercontent.com/81001494/164477008-00689026-00a4-4c00-b4fb-d4381b8e3f7a.png"> <br/>
-<img src="https://user-images.githubusercontent.com/81001494/164477160-041f7959-00b5-4e09-bace-1c5e64c96cd7.png"> <br/>
+<img src="https://user-images.githubusercontent.com/81001494/164477957-c75d190e-a4f2-4f04-85da-f22b2169de65.png"> <br/>
+<img src="https://user-images.githubusercontent.com/81001494/164478121-c4154224-59e1-462c-9676-190864748a9b.png"> <br/>
+<img src="https://user-images.githubusercontent.com/81001494/164478320-9ed6af32-9bb9-4418-9ce9-4a2a54d51179.png"> <br/>
 
 
 - 제작중 -
