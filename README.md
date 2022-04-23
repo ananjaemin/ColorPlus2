@@ -21,6 +21,12 @@ ColorPlus의 제작 의도는 사용자가 보다 쉽게 다가올 수 있고 �
         <img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white">
       </th>
   </tr>
+   <tr>
+      <td>상태 관리</td>
+      <th>
+       <img src="https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white">
+      </th>
+  </tr>
   <tr>
       <td>CSS-in-Js</td>
       <th>
