@@ -2,6 +2,7 @@
  <li>
   <i>실력부족으로 제작 연기함 </i>
     
+ 
  </li>
 <h2>프로젝트 소개</h2>
 제 4회 한세톤 해일삼팀에서 개발한 <a href="https://github.com/CSW-Team/ColorPlus">ColorPlus</a>를 리메이크해서 제작했습니다.<br/>
